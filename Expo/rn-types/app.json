@@ -1,0 +1,12 @@
+{
+  "name": "rn-types",
+  "displayName": "rn-types",
+  "expo": {
+    "name": "rn-types",
+    "slug": "rn-types",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

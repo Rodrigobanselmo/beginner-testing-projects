@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Chat</title>
+</head>
+<body>
+    <div id="messages">
+<!--         <h3>Novo Post</h3>
+        <div>
+            <input id="title" placeholder="Titulo">
+            <input id="desc" placeholder="Descricao">
+            <button onclick="newPost()">Salvar</button>
+        </div>
+
+        <h2 class="mt-4">Mural</h2>
+        <div id="posts">
+
+        </div> -->
+    </div>
+
+    <form name="message_form_name" id="message_form">
+        <input name="msg" id="message" type="text" placeholder="menssagem...">
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./scripts/chat.js" ></script>
+</body>
+</html>

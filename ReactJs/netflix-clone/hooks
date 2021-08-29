@@ -1,0 +1,29 @@
+const memoizedCallback = useCallback(
+  () => {
+    doSomething(a, b);
+  },
+  [a, b],
+);
+
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+
+
+
+
+function MyComponent(props) {
+  /* renderize usando props */
+}
+function areEqual(prevProps, nextProps) {
+  /*
+  se prevProps e nextProps renderizam o mesmo resultado,
+  retorne true.
+  caso contrário, retorne false.
+  */
+}
+export default React.memo(MyComponent, areEqual);
+
+
+
+const MyComponent = React.memo(function MyComponent(props) {
+  /* renderize usando props */
+});

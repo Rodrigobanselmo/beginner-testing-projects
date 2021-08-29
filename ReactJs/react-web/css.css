@@ -1,0 +1,195 @@
+
+:root{
+    --var_color: gray;
+}
+
+#margin-padding {
+    margin: auto;
+    padding: 10px 20px;  /* top/bottom --- left/right */
+} 
+
+#background {
+    background: url(./public/logo192.png) no-repeat;
+    background-image: url(./public/logo192.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+#text {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+
+
+    font-size: 0px;
+    font-size: 0cm;
+    font-size: 0rem;
+    font-size: 0em;
+
+    text-align: justify;
+    text-transform: uppercase;
+    text-indent: 0px; /* serve para colocar tab */
+
+    line-height: 0px;
+    letter-spacing: 0px; 
+    letter-spacing: 1.6;
+    word-spacing: 0px; 
+    text-shadow: 1px 1px #bbb;
+}
+
+#border {
+    border-width: 0px;
+    border-style: solid;
+    border-color: aquamarine;
+
+    border: 0px solid black;
+
+    outline: 0px solid black;
+}
+
+#link {
+    cursor: crosshair;
+    text-decoration: none;
+    background: #bbb;
+    
+    /* #link:visited  */
+    /* #link:link  */
+    /* #link:hover */
+    /* #link:active */
+}
+
+#list {
+    list-style-type: none;
+    list-style-image: url('./');
+    list-style-position: inside;
+
+}
+
+#important {
+    box-sizing: border-box;
+    display: inline-block;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    
+}
+
+#pseudo::before { /* after */
+    background-image: url();
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* aling-item pega dentro do grid e arruma os item, ja o content tira o comntent do grid  */
+.flex{
+    flex-grow: 1; /* aumenta e diminui */
+    flex-shrink: 0; /* nao pode aumentar ou diminuir */
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template: auto auto / 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+@keyframes NOME {
+    0% {background-color: #bbb;}
+    100% {background-color: aqua;}
+}
+
+.animations {
+    animation-name: NOME;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+
+    transition-property: background-color, padding;
+    transition-duration: 0s,0s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+}
+
+/* All CSS Pseudo Classes
+Selector	Example	Example description
+:active	a:active	Selects the active link
+:checked	input:checked	Selects every checked <input> element
+:disabled	input:disabled	Selects every disabled <input> element
+:empty	p:empty	Selects every <p> element that has no children
+:enabled	input:enabled	Selects every enabled <input> element
+:first-child	p:first-child	Selects every <p> elements that is the first child of its parent
+:first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent
+:focus	input:focus	Selects the <input> element that has focus
+:hover	a:hover	Selects links on mouse over
+:in-range	input:in-range	Selects <input> elements with a value within a specified range
+:invalid	input:invalid	Selects all <input> elements with an invalid value
+:lang(language)	p:lang(it)	Selects every <p> element with a lang attribute value starting with "it"
+:last-child	p:last-child	Selects every <p> elements that is the last child of its parent
+:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+:link	a:link	Selects all unvisited links
+:not(selector)	:not(p)	Selects every element that is not a <p> element
+:nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
+:only-child	p:only-child	Selects every <p> element that is the only child of its parent
+:optional	input:optional	Selects <input> elements with no "required" attribute
+:out-of-range	input:out-of-range	Selects <input> elements with a value outside a specified range
+:read-only	input:read-only	Selects <input> elements with a "readonly" attribute specified
+:read-write	input:read-write	Selects <input> elements with no "readonly" attribute
+:required	input:required	Selects <input> elements with a "required" attribute specified
+:root	root	Selects the document's root element
+:target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid	input:valid	Selects all <input> elements with a valid value
+:visited	a:visited	Selects all visited links
+All CSS Pseudo Elements
+Selector	Example	Example description
+::after	p::after	Insert content after every <p> element
+::before	p::before	Insert content before every <p> element
+::first-letter	p::first-letter	Selects the first letter of every <p> element
+::first-line	p::first-line	Selects the first line of every <p> element
+::selection	p::selection	Selects the portion of an element that is selected by a user */
+
+/* .todasListas {
+disc	Default value. The marker is a filled circle
+armenian	The marker is traditional Armenian numbering
+circle	The marker is a circle
+cjk-ideographic	The marker is plain ideographic numbers
+decimal	The marker is a number
+decimal-leading-zero	The marker is a number with leading zeros (01, 02, 03, etc.)
+georgian	The marker is traditional Georgian numbering
+hebrew	The marker is traditional Hebrew numbering
+hiragana	The marker is traditional Hiragana numbering
+hiragana-iroha	The marker is traditional Hiragana iroha numbering
+katakana	The marker is traditional Katakana numbering
+katakana-iroha	The marker is traditional Katakana iroha numbering
+lower-alpha	The marker is lower-alpha (a, b, c, d, e, etc.)
+lower-greek	The marker is lower-greek
+lower-latin	The marker is lower-latin (a, b, c, d, e, etc.)
+lower-roman	The marker is lower-roman (i, ii, iii, iv, v, etc.)
+none	No marker is shown
+square	The marker is a square
+upper-alpha	The marker is upper-alpha (A, B, C, D, E, etc.)
+upper-greek	The marker is upper-greek
+upper-latin	The marker is upper-latin (A, B, C, D, E, etc.)
+upper-roman	The marker is upper-roman (I, II, III, IV, V, etc.)
+} */

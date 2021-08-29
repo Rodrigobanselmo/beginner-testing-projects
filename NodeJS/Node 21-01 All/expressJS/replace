@@ -1,0 +1,12 @@
+
+user= {
+    id:1,
+    name:rodrigo
+}
+
+for(let key in o obj) {
+    data.replace(`{{{${key}}}})`,obj[key];
+}
+
+-->key = id ou name
+-->obj[key] = 1 ou rodrigo

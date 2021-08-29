@@ -1,0 +1,20 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+.hide {
+    display: none;
+}

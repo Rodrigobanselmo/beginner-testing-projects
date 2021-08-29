@@ -1,0 +1,396 @@
+[
+    {
+        "jump": [
+            {
+                "questionId": "6e9cccf28bc",
+                "g": [
+                    "a) no armazenamento de explosivos",
+                    "b) no transporte de explosivos",
+                    "d) na operação de carregamento de explosivos",
+                    "h) nas operações de manuseio de explosivos",
+                    "c) na operação de escorva dos cartuchos de explosivos",
+                    "e) na detonação",
+                    "f) na verificação de denotações falhadas",
+                    " g) na queima e destruição de explosivos deteriorados"
+                ],
+                "selected": "q_2"
+            },
+            {
+                "selected": "q_2",
+                "questionId": "d6c6ad042ad",
+                "q": [
+                    "cede2ac0038"
+                ]
+            }
+        ],
+        "id": "f5ffaaa7ac9",
+        "groups": [
+            "a) no armazenamento de explosivos",
+            "b) no transporte de explosivos",
+            "c) na operação de escorva dos cartuchos de explosivos",
+            "d) na operação de carregamento de explosivos",
+            "e) na detonação",
+            "f) na verificação de denotações falhadas",
+            " g) na queima e destruição de explosivos deteriorados",
+            "h) nas operações de manuseio de explosivos"
+        ],
+        "group": "EXPLOSIVOS (Anexo 1)",
+        "questions": [
+            {
+                "type": "pers",
+                "mother": true,
+                "action": {
+                    "q_1": {
+                        "text": "SIM",
+                        "id": "q_1",
+                        "data": []
+                    },
+                    "q_2": {
+                        "data": [],
+                        "text": "NÃO",
+                        "jump": {
+                            "g": [
+                                "a) no armazenamento de explosivos",
+                                "b) no transporte de explosivos",
+                                "d) na operação de carregamento de explosivos",
+                                "h) nas operações de manuseio de explosivos",
+                                "c) na operação de escorva dos cartuchos de explosivos",
+                                "e) na detonação",
+                                "f) na verificação de denotações falhadas",
+                                " g) na queima e destruição de explosivos deteriorados"
+                            ]
+                        },
+                        "id": "q_2"
+                    }
+                },
+                "photo": false,
+                "text": "Existe atividades com explosivos?",
+                "id": "6e9cccf28bc"
+            },
+            {
+                "action": {
+                    "q_2": {
+                        "data": [],
+                        "jump": {
+                            "q": [
+                                "cede2ac0038"
+                            ]
+                        },
+                        "id": "q_2",
+                        "text": "NÃO"
+                    },
+                    "q_1": {
+                        "text": "SIM",
+                        "id": "q_1",
+                        "data": []
+                    }
+                },
+                "text": "Existe atividade de armazenamento de explosivos?",
+                "group": "a) no armazenamento de explosivos",
+                "id": "d6c6ad042ad",
+                "photo": false,
+                "type": "pers"
+            },
+            {
+                "id": "cede2ac0038",
+                "type": "standard",
+                "group": "a) no armazenamento de explosivos",
+                "text": "A atividade é exatamente a mesmo ou se equipara?",
+                "photo": false,
+                "action": {
+                    "q_2": {
+                        "text": "Se equipara",
+                        "id": "q_2",
+                        "child": "a-exp-r//equivalent",
+                        "data": []
+                    },
+                    "q_1": {
+                        "data": [],
+                        "child": "a-exp-r//same",
+                        "id": "q_1",
+                        "text": "Exatamente a mesma"
+                    }
+                }
+            },
+            {
+                "photo": false,
+                "type": "standard",
+                "parent": "cede2ac0038",
+                "hide": true,
+                "action": {
+                    "q_2": {
+                        "id": "q_2",
+                        "text": "NÃO",
+                        "data": []
+                    },
+                    "q_3": {
+                        "data": [],
+                        "text": "N.A.",
+                        "id": "q_3"
+                    },
+                    "q_1": {
+                        "id": "q_1",
+                        "data": [],
+                        "text": "SIM"
+                    }
+                },
+                "text": "Descreva área equivalente (*)estará presente no documento gerado",
+                "group": "a) no armazenamento de explosivos",
+                "id": "61ae6bf8504"
+            },
+            {
+                "id": "bebc88b0a87",
+                "parent": "cede2ac0038",
+                "type": "standard",
+                "hide": true,
+                "text": "Quer fazer uma observação/descrição para essa atividade? (*)estará presente no documento gerado",
+                "photo": false,
+                "group": "a) no armazenamento de explosivos",
+                "action": {
+                    "q_1": {
+                        "text": "SIM",
+                        "data": [],
+                        "id": "q_1"
+                    },
+                    "q_3": {
+                        "text": "N.A.",
+                        "id": "q_3",
+                        "data": []
+                    },
+                    "q_2": {
+                        "text": "NÃO",
+                        "id": "q_2",
+                        "data": []
+                    }
+                }
+            },
+            {
+                "id": "8af73743562",
+                "group": "a) no armazenamento de explosivos",
+                "type": "mult",
+                "action": {
+                    "q_1": {
+                        "child": "ffe1b6db723",
+                        "id": "q_1",
+                        "jump": {
+                            "q": []
+                        },
+                        "text": "Locais de armazenagem de explosivos iniciadores",
+                        "data": []
+                    },
+                    "q_2": {
+                        "id": "q_2",
+                        "text": "Locais de armazenagem de pólvoras químicas, artifícios pirotécnicos e produtos químicos usados na fabricação de misturas explosivas ou de fogos de artifício",
+                        "data": [],
+                        "jump": {
+                            "q": []
+                        }
+                    },
+                    "q_3": {
+                        "jump": {
+                            "q": []
+                        },
+                        "data": [],
+                        "text": "Locais de armazenagem de explosivos de ruptura e pólvoras mecânicos (pólvora negra e pólvora chocolate ou parda)",
+                        "id": "q_3"
+                    }
+                },
+                "text": "Selecione os tipos de explosivos armazenados.",
+                "photo": false
+            },
+            {
+                "id": "ffe1b6db723",
+                "text": "Selecione a QUANTIDADE ARMAZENADA EM QUILOS (*)explosivos iniciadores ",
+                "type": "mult",
+                "parent": "8af73743562",
+                "group": "a) no armazenamento de explosivos",
+                "hide": true,
+                "perType": "ei",
+                "action": {
+                    "q_1": {
+                        "metros": 45,
+                        "id": "q_1",
+                        "text": "Até 4.500 kg",
+                        "data": [],
+                        "child": "a-exp-a//q2//0//45//before"
+                    },
+                    "q_2": {
+                        "metros": 90,
+                        "id": "q_1",
+                        "text": "Mais de 4.500 kg até 45.000 kg",
+                        "data": [],
+                        "child": "a-exp-a//q2//1//90//before"
+                    },
+                    "q_3": {
+                        "metros": 110,
+                        "id": "q_1",
+                        "text": "Mais de 45.000 kg até 90.000 kg",
+                        "data": [],
+                        "child": "a-exp-a//q2//2//110//before"
+                    },
+                    "q_4": {
+                        "metros": 180,
+                        "id": "q_1",
+                        "text": "Mais de 90.000 kg até 225.000 kg",
+                        "data": [],
+                        "child": "a-exp-a//q2//3//180//before"
+                    }
+                },
+                "photo": false,
+                "subText": "Se existir mais de um local de armazenamento selecione mais de uma opção"
+            },
+            
+            {
+                "type": "pers",
+                "action": {
+                    "q_1": {
+                        "child": "a-exp-a//q2//0//45//ok",
+                        "id": "q_1",
+                        "text": "SIM",
+                        "data": []
+                    },
+                    "q_2": {
+                        "child": "a-exp-a//q2//0//45//attention",
+                        "id": "q_2",
+                        "text": "NÃO",
+                        "data": []
+                    }
+                },
+                "photo": false,
+                "text": "Existe delimitação física  da área de risco, ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas?",
+                "id": "a-exp-a//q2//0//45//before",
+                "hide": true,
+                "parent": "ffe1b6db723",
+                "subParent": [
+                    "8af73743562"
+                ],
+                "group": "a) no armazenamento de explosivos"
+            },
+            {
+                "type": "pers",
+                "action": {
+                    "q_1": {
+                        "child": "a-exp-a//q2//0//45//confirmed",
+                        "id": "q_1",
+                        "text": "Contiuar",
+                        "data": []
+                    }
+                },
+                "photo": false,
+                "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+                "id": "a-exp-a//q2//0//45//attention",
+                "hide": true,
+                "parent": "a-exp-a//q2//0//45//before",
+                "subParent": [
+                    "8af73743562",
+                    "ffe1b6db723"
+                ],
+                "group": "a) no armazenamento de explosivos"
+            },
+            {
+                "type": "obs",
+                "action": "a-exp-a",
+                "photo": false,
+                "text": "Quer fazer uma observação/descrição para essa atividade? (*)estará presente no documento gerado",
+                "id": "a-exp-a//q2//0//45//confirmed",
+                "hide": true,
+                "parent": "a-exp-a//q2//0//45//attention",
+                "subParent": [
+                    "8af73743562",
+                    "ffe1b6db723",
+                    "a-exp-a//q2//0//45//before"
+                ],
+                "group": "a) no armazenamento de explosivos"
+            },
+            {
+                "type": "obs",
+                "action": "a-exp-a",
+                "photo": false,
+                "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+                "id": "a-exp-a//q2//0//45//ok",
+                "hide": true,
+                "parent": "a-exp-a//q2//0//45//before",
+                "subParent": [
+                    "8af73743562",
+                    "ffe1b6db723"
+                ],
+                "group": "a) no armazenamento de explosivos"
+            },
+            {
+                "id": "fdfb237aec8",
+                "subText": "Se existir mais de um local de armazenamento selecione mais de uma opção",
+                "type": "standard",
+                "group": "a) no armazenamento de explosivos",
+                "text": "Selecione a QUANTIDADE ARMAZENADA EM QUILOS (*)explosivos iniciadores ",
+                "action": {
+                    "q_3": {
+                        "data": [],
+                        "text": "N.A.",
+                        "id": "q_3"
+                    },
+                    "q_1": {
+                        "id": "q_1",
+                        "text": "SIM",
+                        "data": []
+                    },
+                    "q_2": {
+                        "text": "NÃO",
+                        "data": [],
+                        "id": "q_2"
+                    }
+                },
+                "photo": false
+            },
+            {
+                "photo": false,
+                "action": {
+                    "q_3": {
+                        "id": "q_3",
+                        "data": [],
+                        "text": "N.A."
+                    },
+                    "q_1": {
+                        "data": [],
+                        "text": "SIM",
+                        "id": "q_1"
+                    },
+                    "q_2": {
+                        "id": "q_2",
+                        "text": "NÃO",
+                        "data": []
+                    }
+                },
+                "type": "standard",
+                "text": "Selecione a QUANTIDADE ARMAZENADA EM QUILOS (*)pólvoras químicas, artifícios pirotécnicos e produtos químicos ",
+                "subText": "Se existir mais de um local de armazenamento selecione mais de uma opção",
+                "group": "a) no armazenamento de explosivos",
+                "id": "4e4279f1874"
+            },
+            {
+                "photo": false,
+                "id": "0f9ef470f9e",
+                "text": "Selecione a QUANTIDADE ARMAZENADA EM QUILOS (*)explosivos de ruptura e pólvoras mecânicos",
+                "group": "a) no armazenamento de explosivos",
+                "action": {
+                    "q_1": {
+                        "data": [],
+                        "text": "SIM",
+                        "id": "q_1"
+                    },
+                    "q_3": {
+                        "data": [],
+                        "id": "q_3",
+                        "text": "N.A."
+                    },
+                    "q_2": {
+                        "data": [],
+                        "text": "NÃO",
+                        "id": "q_2"
+                    }
+                },
+                "subText": "Se existir mais de um local de armazenamento selecione mais de uma opção",
+                "type": "standard"
+            }
+        ]
+    }
+]

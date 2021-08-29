@@ -1,0 +1,1027 @@
+[
+    {
+        "photo": false,
+        "parent": "a-exp-a//locals",
+        "subText": "Se existir mais de um local de armazenamento selecione mais de uma opção",
+        "text": "Selecione a QUANTIDADE ARMAZENADA EM QUILOS (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos",
+        "type": "mult",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a//fogos",
+        "action": {
+            "q_1": {
+                "child": "a-exp-a-fo-45",
+                "text": "Até 4.500 kg",
+                "id": "q_1"
+            },
+            "q_2": {
+                "child": "a-exp-a-fo-90",
+                "text": "Mais de 4.500 kg até 45.000 kg",
+                "id": "q_2"
+            },
+            "q_3": {
+                "child": "a-exp-a-fo-110",
+                "text": "Mais de 45.000 kg até 90.000 kg",
+                "id": "q_3"
+            },
+            "q_4": {
+                "child": "a-exp-a-fo-180",
+                "text": "Mais de 90.000 kg até 225.000 kg",
+                "id": "q_4"
+            }
+        }
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (45 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Até 4.500 kg (*)45 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-fo-45",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-fo-45//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-fo-45//noBarrier"
+            }
+        },
+        "id": "a-exp-a-fo-45",
+        "parent": "a-exp-a//fogos"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-fo-45",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-fo-45//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-45//noBarrier",
+        "parent": "a-exp-a-fo-45"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Até 4.500 kg (*)45 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-45//noBarrierConfirme",
+        "parent": "a-exp-a-fo-45//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Até 4.500 kg (*)45 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-45//barrier",
+        "parent": "a-exp-a-fo-45"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (90 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 4.500 kg até 45.000 kg (*)90 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-fo-90",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-fo-90//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-fo-90//noBarrier"
+            }
+        },
+        "id": "a-exp-a-fo-90",
+        "parent": "a-exp-a//fogos"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-fo-90",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-fo-90//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-90//noBarrier",
+        "parent": "a-exp-a-fo-90"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 4.500 kg até 45.000 kg (*)90 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-90//noBarrierConfirme",
+        "parent": "a-exp-a-fo-90//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 4.500 kg até 45.000 kg (*)90 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-90//barrier",
+        "parent": "a-exp-a-fo-90"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (110 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 45.000 kg até 90.000 kg (*)110 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-fo-110",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-fo-110//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-fo-110//noBarrier"
+            }
+        },
+        "id": "a-exp-a-fo-110",
+        "parent": "a-exp-a//fogos"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-fo-110",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-fo-110//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-110//noBarrier",
+        "parent": "a-exp-a-fo-110"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 45.000 kg até 90.000 kg (*)110 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-110//noBarrierConfirme",
+        "parent": "a-exp-a-fo-110//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 45.000 kg até 90.000 kg (*)110 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-110//barrier",
+        "parent": "a-exp-a-fo-110"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (180 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 90.000 kg até 225.000 kg (*)180 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-fo-180",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-fo-180//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-fo-180//noBarrier"
+            }
+        },
+        "id": "a-exp-a-fo-180",
+        "parent": "a-exp-a//fogos"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-fo-180",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-fo-180//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-180//noBarrier",
+        "parent": "a-exp-a-fo-180"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 90.000 kg até 225.000 kg (*)180 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-180//noBarrierConfirme",
+        "parent": "a-exp-a-fo-180//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Pólvoras químicas, artifícios pirotécnicos e produtos químicos (*)Mais de 90.000 kg até 225.000 kg (*)180 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-fo-180//barrier",
+        "parent": "a-exp-a-fo-180"
+    },
+    {
+        "photo": false,
+        "parent": "a-exp-a//locals",
+        "subText": "Se existir mais de um local de armazenamento selecione mais de uma opção",
+        "text": "Selecione a QUANTIDADE ARMAZENADA EM QUILOS (*)Explosivos iniciadores",
+        "type": "mult",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a//iniciadores",
+        "action": {
+            "q_1": {
+                "child": "a-exp-a-ei-75",
+                "text": "Até 20 kg",
+                "id": "q_1"
+            },
+            "q_2": {
+                "child": "a-exp-a-ei-220",
+                "text": "Mais de 20 kg até 200 kg",
+                "id": "q_2"
+            },
+            "q_3": {
+                "child": "a-exp-a-ei-300",
+                "text": "Mais de 200 kg até 900 kg",
+                "id": "q_3"
+            },
+            "q_4": {
+                "child": "a-exp-a-ei-370",
+                "text": "Mais de 900 kg até 2.200 kg",
+                "id": "q_4"
+            },
+            "q_5": {
+                "child": "a-exp-a-ei-460",
+                "text": "Mais de 2.200 kg até 4.500 kg",
+                "id": "q_5"
+            },
+            "q_6": {
+                "child": "a-exp-a-ei-500",
+                "text": "Mais de 4.500 kg até 6.800 kg",
+                "id": "q_6"
+            },
+            "q_7": {
+                "child": "a-exp-a-ei-530",
+                "text": "Mais de 6.800 kg até 9.000 kg",
+                "id": "q_7"
+            }
+        }
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (75 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Explosivos iniciadores (*)Até 20 kg (*)75 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-75",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-75//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-ei-75//noBarrier"
+            }
+        },
+        "id": "a-exp-a-ei-75",
+        "parent": "a-exp-a//iniciadores"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-75",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-75//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-75//noBarrier",
+        "parent": "a-exp-a-ei-75"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Até 20 kg (*)75 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-75//noBarrierConfirme",
+        "parent": "a-exp-a-ei-75//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Até 20 kg (*)75 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-75//barrier",
+        "parent": "a-exp-a-ei-75"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (220 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Explosivos iniciadores (*)Mais de 20 kg até 200 kg (*)220 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-220",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-220//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-ei-220//noBarrier"
+            }
+        },
+        "id": "a-exp-a-ei-220",
+        "parent": "a-exp-a//iniciadores"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-220",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-220//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-220//noBarrier",
+        "parent": "a-exp-a-ei-220"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 20 kg até 200 kg (*)220 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-220//noBarrierConfirme",
+        "parent": "a-exp-a-ei-220//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 20 kg até 200 kg (*)220 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-220//barrier",
+        "parent": "a-exp-a-ei-220"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (300 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Explosivos iniciadores (*)Mais de 200 kg até 900 kg (*)300 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-300",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-300//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-ei-300//noBarrier"
+            }
+        },
+        "id": "a-exp-a-ei-300",
+        "parent": "a-exp-a//iniciadores"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-300",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-300//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-300//noBarrier",
+        "parent": "a-exp-a-ei-300"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 200 kg até 900 kg (*)300 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-300//noBarrierConfirme",
+        "parent": "a-exp-a-ei-300//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 200 kg até 900 kg (*)300 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-300//barrier",
+        "parent": "a-exp-a-ei-300"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (370 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Explosivos iniciadores (*)Mais de 900 kg até 2.200 kg (*)370 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-370",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-370//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-ei-370//noBarrier"
+            }
+        },
+        "id": "a-exp-a-ei-370",
+        "parent": "a-exp-a//iniciadores"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-370",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-370//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-370//noBarrier",
+        "parent": "a-exp-a-ei-370"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 900 kg até 2.200 kg (*)370 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-370//noBarrierConfirme",
+        "parent": "a-exp-a-ei-370//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 900 kg até 2.200 kg (*)370 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-370//barrier",
+        "parent": "a-exp-a-ei-370"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (460 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Explosivos iniciadores (*)Mais de 2.200 kg até 4.500 kg (*)460 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-460",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-460//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-ei-460//noBarrier"
+            }
+        },
+        "id": "a-exp-a-ei-460",
+        "parent": "a-exp-a//iniciadores"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-460",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-460//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-460//noBarrier",
+        "parent": "a-exp-a-ei-460"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 2.200 kg até 4.500 kg (*)460 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-460//noBarrierConfirme",
+        "parent": "a-exp-a-ei-460//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 2.200 kg até 4.500 kg (*)460 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-460//barrier",
+        "parent": "a-exp-a-ei-460"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (500 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Explosivos iniciadores (*)Mais de 4.500 kg até 6.800 kg (*)500 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-500",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-500//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-ei-500//noBarrier"
+            }
+        },
+        "id": "a-exp-a-ei-500",
+        "parent": "a-exp-a//iniciadores"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-500",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-500//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-500//noBarrier",
+        "parent": "a-exp-a-ei-500"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 4.500 kg até 6.800 kg (*)500 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-500//noBarrierConfirme",
+        "parent": "a-exp-a-ei-500//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 4.500 kg até 6.800 kg (*)500 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-500//barrier",
+        "parent": "a-exp-a-ei-500"
+    },
+    {
+        "photo": false,
+        "subParent": [
+            "a-exp-a//locals"
+        ],
+        "text": "Existe delimitação física da área de risco (530 metros), ou seja qualquer obstáculo que impeça o ingresso de pessoas não autorizadas? (*)Explosivos iniciadores (*)Mais de 6.800 kg até 9.000 kg (*)530 metros",
+        "type": "pers",
+        "hide": true,
+        "group": "a) no armazenamento de explosivos",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "SIM",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-530",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-530//barrier"
+            },
+            "q_2": {
+                "text": "NÃO",
+                "data": [],
+                "id": "q_2",
+                "child": "a-exp-a-ei-530//noBarrier"
+            }
+        },
+        "id": "a-exp-a-ei-530",
+        "parent": "a-exp-a//iniciadores"
+    },
+    {
+        "type": "pers",
+        "action": {
+            "q_1": {
+                "id": "q_1",
+                "text": "Continuar",
+                "data": [
+                    {
+                        "risk": "a-exp-a-ei-530",
+                        "man": true
+                    }
+                ],
+                "child": "a-exp-a-ei-530//noBarrierConfirme"
+            }
+        },
+        "photo": false,
+        "text": "A não existencia de uma delimitação física da área de risco implica que todas os empregados que estejam presentes no estabelecimneto, mesmo que fora da área de risco, devam receber o adicional de periculosidade, ao estar ciente disso, deseja continuar?",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-530//noBarrier",
+        "parent": "a-exp-a-ei-530"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 6.800 kg até 9.000 kg (*)530 metros (*)Sem obstaculos físicos (*)estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a-ei-45",
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-530//noBarrierConfirme",
+        "parent": "a-exp-a-ei-530//noBarrier"
+    },
+    {
+        "type": "obs",
+        "action": "a-exp-a",
+        "photo": false,
+        "text": "Quer fazer uma observação para a área de risco dos explosivos armazenados? (*)Explosivos iniciadores (*)Mais de 6.800 kg até 9.000 kg (*)530 metros (*)Estará presente no documento gerado",
+        "hide": true,
+        "subParent": [
+            "a-exp-a//iniciadores",
+            "a-exp-a//locals"
+        ],
+        "group": "a) no armazenamento de explosivos",
+        "id": "a-exp-a-ei-530//barrier",
+        "parent": "a-exp-a-ei-530"
+    }
+]

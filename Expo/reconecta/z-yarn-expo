@@ -1,0 +1,2 @@
+expo install @expo-google-fonts/poppins @react-native-async-storage/async-storage expo-app-loading expo-font firebase
+yarn add react-native-iphone-x-helper react-native-toast-message redux react-redux redux-persist styled-components react-native-responsive-fontsize

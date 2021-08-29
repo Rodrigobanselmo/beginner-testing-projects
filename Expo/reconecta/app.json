@@ -1,0 +1,12 @@
+{
+  "name": "reconecta",
+  "displayName": "reconecta",
+  "expo": {
+    "name": "reconecta",
+    "slug": "reconecta",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
